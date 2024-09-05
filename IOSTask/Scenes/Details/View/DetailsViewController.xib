@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="IOSTask" customModuleProvider="target">
+            <connections>
+                <outlet property="detailsImage" destination="1dc-5S-syj" id="QcU-UO-uZJ"/>
+                <outlet property="detailsLocationLabel" destination="Awp-Gx-KjU" id="67b-oA-okV"/>
+                <outlet property="detailsStatusLabel" destination="Cpr-6F-1CO" id="PKb-0y-YdL"/>
+                <outlet property="detailsSubTitleLabel" destination="Vyl-go-Aiu" id="dfA-RH-e0g"/>
+                <outlet property="detailsTitleLabel" destination="uhD-4U-8NO" id="Bxd-SC-iiJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dc-5S-syj">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i5L-FP-di9">
+                    <rect key="frame" x="16" y="442" width="361" height="77.666666666666629"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hnw-xC-rN6">
+                            <rect key="frame" x="0.0" y="0.0" width="320.33333333333331" height="77.666666666666671"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhD-4U-8NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="26.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTitle - Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyl-go-Aiu">
+                                    <rect key="frame" x="0.0" y="30.333333333333314" width="120.33333333333333" height="21.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Gx-KjU">
+                                    <rect key="frame" x="0.0" y="55.999999999999993" width="120.66666666666667" height="21.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpr-6F-1CO">
+                            <rect key="frame" x="328.33333333333331" y="0.0" width="32.666666666666686" height="21.666666666666668"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1dc-5S-syj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="D3m-iZ-yDG"/>
+                <constraint firstItem="i5L-FP-di9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IzB-mY-Z1a"/>
+                <constraint firstItem="1dc-5S-syj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WUV-hG-99N"/>
+                <constraint firstItem="i5L-FP-di9" firstAttribute="top" secondItem="1dc-5S-syj" secondAttribute="bottom" constant="16" id="cI7-a4-7xj"/>
+                <constraint firstItem="1dc-5S-syj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eco-F4-2Mb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1dc-5S-syj" secondAttribute="trailing" id="gCp-yJ-Gdi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i5L-FP-di9" secondAttribute="trailing" constant="16" id="hjP-wo-Wb9"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
